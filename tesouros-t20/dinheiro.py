@@ -1,6 +1,49 @@
 from random import randint
 from time import sleep
 
+dfinal = 0
+
+def dinheirorep1():
+    d1 = randint(1, 4)
+    dfinal = d1 * 100
+    print(f'O seu dinheiro rolou {d1} * 100 T$')
+
+def dinheirorep2():
+    d1 = randint(1, 12)
+    d2 = randint(1, 12)
+    d3 = randint(1, 12)
+    d4 = randint(1, 12)
+    dfinal = (d1 + d2 + d3 + d4) * 10
+    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3} + {d4}) * 10 T$')
+
+def dinheirorep3():
+    d1 = randint(1, 10)
+    d2 = randint(1, 10)
+    dfinal = (d1 + d2) * 100
+    print(f'O seu dinheiro rolou ({d1} + {d2}) * 100 T$')
+
+def dinheirorep4():
+    d1 = randint(1, 6)
+    d2 = randint(1, 6)
+    d3 = randint(1, 6)
+    d4 = randint(1, 6)
+    dfinal = (d1 + d2 + d3 + d4) * 100
+    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3} + {d4}) * 100 T$')
+
+def dinheirorep5():
+    d1 = randint(1, 6)
+    d2 = randint(1, 6)
+    d3 = randint(1, 6)
+    dfinal = (d1 + d2 + d3) * 1000
+    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3}) * 1000 T$')
+
+def dinheirorep6():
+    d1 = randint(1, 4)
+    d2 = randint(1, 4)
+    dfinal = (d1 + d2) * 1000
+    print(f'O seu dinheiro rolou ({d1} + {d2}) * 1000 TO')
+
+
 def dinheirondquarto():
     if rolldinheiro < 30:
 
