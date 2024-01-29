@@ -100,10 +100,7 @@ def dinheirondmeio(rolldinheiro):
         print(f'O seu dinheiro rolou ({d1} + {d2}) * 10 T$')
         return dfinal
     else:
-        d1 = randint(1, 4)
-        dfinal = f'{d1 * 100} T$'
-        sleep(0.4)
-        print(f'O seu dinheiro rolou {d1} * 100 T$')
+        dfinal = dinheirorep1()
         return dfinal
 
 def dinheirond1(rolldinheiro):
