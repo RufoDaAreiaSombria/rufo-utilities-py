@@ -2,7 +2,9 @@ from random import randint
 from time import sleep
 
 def riquezamenor(porcento):
-    ricroll = randint(1+porcento, 100+porcento)
+    ricroll = randint(1, 100)
+    print(f'O dado de uma riqueza foi {ricroll}')
+    ricroll += porcento
     ricmenor = [
         ((1, 25), riqueza1),
         ((26, 40), riqueza2),
@@ -16,12 +18,12 @@ def riquezamenor(porcento):
     for roll, ric in ricmenor:
         if roll[0] <= ricroll <= roll[1]:
             sleep(0.4)
-            print(f'O dado de uma riqueza foi {ricroll}')
             return ric()
-            break
 
 def riquezamedia(porcento):
-    ricroll = randint(1+porcento, 100+porcento)
+    ricroll = randint(1, 100)
+    print(f'O dado de uma riqueza foi {ricroll}')
+    ricroll += porcento
     ricmedia = [
         ((1, 10), riqueza3),
         ((11, 30), riqueza4),
@@ -36,12 +38,12 @@ def riquezamedia(porcento):
     for roll, ric in ricmedia:
         if roll[0] <= ricroll <= roll[1]:
             sleep(0.4)
-            print(f'O dado de uma riqueza foi {ricroll}')
             return ric()
-            break
 
 def riquezamaior(porcento):
-    ricroll = randint(1+porcento, 100+porcento)
+    ricroll = randint(1, 100)
+    print(f'O dado de uma riqueza foi {ricroll}')
+    ricroll += porcento
     ricmaior = [
         ((1, 5), riqueza5),
         ((6, 15), riqueza6),
@@ -56,9 +58,7 @@ def riquezamaior(porcento):
     for roll, ric in ricmaior:
         if roll[0] <= ricroll <= roll[1]:
             sleep(0.4)
-            print(f'O dado de uma riqueza foi {ricroll}')
             return ric()
-            break
 
 def riqueza1():
     d1 = randint(1, 4)

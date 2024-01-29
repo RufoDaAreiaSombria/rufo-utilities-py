@@ -10,7 +10,7 @@ def dinheirorep1():
     d1 = randint(1, 4)
     dfinal = f'{d1 * 100} T$'
     sleep(0.4)
-    print(f'O seu dinheiro rolou {d1} * 100 T$')
+    print(f'O seu dinheiro rolou {d1} x 100 T$')
     return dfinal
 
 def dinheirorep2():
@@ -20,7 +20,7 @@ def dinheirorep2():
     d4 = randint(1, 12)
     dfinal = f'{(d1 + d2 + d3 + d4) * 10} T$'
     sleep(0.4)
-    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3} + {d4}) * 10 T$')
+    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3} + {d4}) x 10 T$')
     return dfinal
 
 def dinheirorep3():
@@ -28,7 +28,7 @@ def dinheirorep3():
     d2 = randint(1, 10)
     dfinal = f'{(d1 + d2) * 100} T$'
     sleep(0.4)
-    print(f'O seu dinheiro rolou ({d1} + {d2}) * 100 T$')
+    print(f'O seu dinheiro rolou ({d1} + {d2}) x 100 T$')
     return dfinal
 
 def dinheirorep4():
@@ -38,7 +38,7 @@ def dinheirorep4():
     d4 = randint(1, 6)
     dfinal = f'{(d1 + d2 + d3 + d4) * 100} T$'
     sleep(0.4)
-    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3} + {d4}) * 100 T$')
+    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3} + {d4}) x 100 T$')
     return dfinal
 
 def dinheirorep5():
@@ -47,7 +47,7 @@ def dinheirorep5():
     d3 = randint(1, 6)
     dfinal = f'{(d1 + d2 + d3) * 1000} T$'
     sleep(0.4)
-    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3}) * 1000 T$')
+    print(f'O seu dinheiro rolou ({d1} + {d2} + {d3}) x 1000 T$')
     return dfinal
 
 def dinheirorep6():
@@ -55,7 +55,7 @@ def dinheirorep6():
     d2 = randint(1, 4)
     dfinal = f'{(d1 + d2) * 1000} T$'
     sleep(0.4)
-    print(f'O seu dinheiro rolou ({d1} + {d2}) * 1000 TO')
+    print(f'O seu dinheiro rolou ({d1} + {d2}) x 1000 TO')
     return dfinal
 
 
@@ -67,19 +67,19 @@ def dinheirondquarto(rolldinheiro):
         d1 = randint(1, 6)
         dfinal = f'{d1 * 10} TC'
         sleep(0.4)
-        print(f'O seu dinheiro rolou {d1} * 10 TC')
+        print(f'O seu dinheiro rolou {d1} x 10 TC')
         return dfinal
     elif rolldinheiro < 95:
         d1 = randint(1, 4)
         dfinal = f'{d1 * 100} TC'
         sleep(0.4)
-        print(f'O seu dinheiro rolou {d1} * 100 TC')
+        print(f'O seu dinheiro rolou {d1} x 100 TC')
         return dfinal
     else:
         d1 = randint(1, 6)
         dfinal = f'{d1 * 10} T$'
         sleep(0.4)
-        print(f'O seu dinheiro rolou {d1} * 10 T$')
+        print(f'O seu dinheiro rolou {d1} x 10 T$')
         return dfinal
 
 def dinheirondmeio(rolldinheiro):
@@ -162,182 +162,62 @@ def dinheirond3(rolldinheiro):
         dinheirorep0()
         return 0
     elif rolldinheiro < 20:
-
+        dfinal = dinheirorep2()
+        return dfinal
     elif rolldinheiro < 60:
-    
+        dfinal = dinheirorep1()
+        return dfinal
     elif rolldinheiro < 90:
-
+        d1 = randint(1, 8)
+        dfinal = f'{d1 * 10} TO'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou {d1} x 10 TO')
+        return dfinal
     else:
+        dfinal = 0
+        dric = randint(1, 3)
+        sleep(0.4)
+        print(f'Você encontrou {dric} riquezas menores.')
+        for c in range(0, dric):
+            d = riquezamenor(0)
+            d = d[:-3]
+            sleep(0.4)
+            dfinal += int(d)
+        dfinal = f'{dfinal} T$'
+        print(f'A sua riqueza total encontrada foi {dfinal}')
+        return dfinal
 
 def dinheirond4(rolldinheiro):
     if rolldinheiro < 10:
         dinheirorep0()
         return 0
     elif rolldinheiro < 50:
-
+        d1 = randint(1, 6)
+        dfinal = f'{d1 * 100} T$'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou {d1} x 100 T$')
+        return dfinal
     elif rolldinheiro < 80:
-
+        d1 = randint(1, 12)
+        dfinal = f'{d1 * 100} T$'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou {d1} x 100 T$')
+        return dfinal
     elif rolldinheiro < 90:
-
+        d1 = riquezamenor(20)
+        sleep(0.4)
+        print(f'A sua riqueza total encontrada foi {d1}')
+        return d1
     else:
-
-def dinheirond5(rolldinheiro):
-    if rolldinheiro < 15:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 65:
-
-    elif rolldinheiro < 95:
-
-    else:
-
-def dinheirond6(rolldinheiro):
-    if rolldinheiro < 15:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 60:
-
-    elif rolldinheiro < 90:
-
-    else:
-
-def dinheirond7(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 60:
-
-    elif rolldinheiro < 90:
-
-    else:
-
-def dinheirond8(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 55:
-
-    elif rolldinheiro < 95:
-
-    else:
-
-def dinheirond9(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 35:
-
-    elif rolldinheiro < 85:
-
-    else:
-
-def dinheirond10(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 30:
-
-    elif rolldinheiro < 85:
-
-    else:
-
-def dinheirond11(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 45:
-
-    elif rolldinheiro < 85:
-
-    else:
-
-def dinheirond12(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 45:
-
-    elif rolldinheiro < 80:
-
-    else:
-
-def dinheirond13(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 45:
-
-    elif rolldinheiro < 80:
-
-    else:
-
-def dinheirond14(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 45:
-
-    elif rolldinheiro < 80:
-
-    else:
-
-def dinheirond15(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 45:
-
-    elif rolldinheiro < 80:
-
-    else:
-
-def dinheirond16(rolldinheiro):
-    if rolldinheiro < 10:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 40:
-
-    elif rolldinheiro < 75:
-
-    else:
-
-def dinheirond17(rolldinheiro):
-    if rolldinheiro < 5:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 40:
-
-    elif rolldinheiro < 75:
-
-    else:
-
-def dinheirond18(rolldinheiro):
-    if rolldinheiro < 5:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 40:
-
-    elif rolldinheiro < 75:
-
-    else:
-
-def dinheirond19(rolldinheiro):
-    if rolldinheiro < 5:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 40:
-
-    elif rolldinheiro < 75:
-
-    else:
-
-def dinheirond20(rolldinheiro):
-    if rolldinheiro < 5:
-        dinheirorep0()
-        return 0
-    elif rolldinheiro < 40:
-
-    elif rolldinheiro < 75:
-
-    else:
-
+        dfinal = 0
+        dric = randint(1, 3)
+        sleep(0.4)
+        print(f'Você encontrou {dric} riquezas menores.')
+        for c in range(0, dric):
+            d = riquezamenor(20)
+            d = d[:-3]
+            sleep(0.4)
+            dfinal += int(d)
+        dfinal = f'{dfinal} T$'
+        print(f'A sua riqueza total encontrada foi {dfinal}')
+        return dfinal
