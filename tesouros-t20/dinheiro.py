@@ -180,6 +180,8 @@ def dinheirond3(rolldinheiro):
         print(f'Você encontrou {dric} riquezas menores.')
         for c in range(0, dric):
             d = riquezamenor(0)
+            sleep(0.4)
+            print(f'Totalizando {d}')
             d = d[:-3]
             sleep(0.4)
             dfinal += int(d)
@@ -215,6 +217,152 @@ def dinheirond4(rolldinheiro):
         print(f'Você encontrou {dric} riquezas menores.')
         for c in range(0, dric):
             d = riquezamenor(20)
+            sleep(0.4)
+            print(f'Totalizando {d}')
+            d = d[:-3]
+            sleep(0.4)
+            dfinal += int(d)
+        dfinal = f'{dfinal} T$'
+        print(f'A sua riqueza total encontrada foi {dfinal}')
+        return dfinal
+
+def dinheirond5(rolldinheiro):
+    if rolldinheiro < 15:
+        dinheirorep0()
+        return 0
+    elif rolldinheiro < 65:
+        d1 = randint(1, 8)
+        dfinal = f'{d1 * 100} T$'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou {d1} x 100 T$')
+        return dfinal
+    elif rolldinheiro < 95:
+        d1 = randint(1, 4)
+        d2 = randint(1, 4)
+        d3 = randint(1, 4)
+        dfinal = f'{(d1 + d2 + d3) * 10} TO'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou ({d1} + {d2} + {d3}) x 10 TO')
+        return dfinal
+    else:
+        d1 = riquezamedia(0)
+        sleep(0.4)
+        print(f'A sua riqueza total encontrada foi {d1}')
+        return d1
+
+def dinheirond6(rolldinheiro):
+    if rolldinheiro < 15:
+        dinheirorep0()
+        return 0
+    elif rolldinheiro < 60:
+        d1 = randint(1, 6)
+        d2 = randint(1, 6)
+        dfinal = f'{(d1 + d2) * 100} T$'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou ({d1} + {d2}) x 100 T$')
+        return dfinal
+    elif rolldinheiro < 90:
+        dfinal = dinheirorep3()
+        return dfinal
+    else:
+        dfinal = 0
+        dric = randint(1, 3)
+        sleep(0.4)
+        print(f'Você encontrou {dric + 1} riquezas menores.')
+        for c in range(0, dric + 1):
+            d = riquezamenor(0)
+            sleep(0.4)
+            print(f'Totalizando {d}')
+            d = d[:-3]
+            sleep(0.4)
+            dfinal += int(d)
+        dfinal = f'{dfinal} T$'
+        print(f'A sua riqueza total encontrada foi {dfinal}')
+        return dfinal
+    
+def dinheirond7(rolldinheiro):
+    if rolldinheiro < 10:
+        dinheirorep0()
+        return 0
+    elif rolldinheiro < 60:
+        d1 = randint(1, 8)
+        d2 = randint(1, 8)
+        dfinal = f'{(d1 + d2) * 100} T$'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou ({d1} + {d2}) x 100 T$')
+        return dfinal
+    elif rolldinheiro < 90:
+        d1 = randint(1, 12)
+        d2 = randint(1, 12)
+        dfinal = f'{(d1 + d2) * 10} TO'
+        sleep(0.4)
+        print(f'O seu dinheiro rolou ({d1} + {d2}) x 10 TO')
+        return dfinal
+    else:
+        dfinal = 0
+        dric = randint(1, 4)
+        sleep(0.4)
+        print(f'Você encontrou {dric + 1} riquezas menores.')
+        for c in range(0, dric + 1):
+            d = riquezamenor(0)
+            sleep(0.4)
+            print(f'Totalizando {d}')
+            d = d[:-3]
+            sleep(0.4)
+            dfinal += int(d)
+        dfinal = f'{dfinal} T$'
+        print(f'A sua riqueza total encontrada foi {dfinal}')
+        return dfinal
+    
+def dinheirond8(rolldinheiro):
+    if rolldinheiro < 10:
+        dinheirorep0()
+        return 0
+    elif rolldinheiro < 55:
+        dfinal = dinheirorep3()
+        return dfinal
+    elif rolldinheiro < 95:
+        dfinal = 0
+        dric = randint(1, 4)
+        sleep(0.4)
+        print(f'Você encontrou {dric + 1} riquezas menores.')
+        for c in range(0, dric + 1):
+            d = riquezamenor(0)
+            sleep(0.4)
+            print(f'Totalizando {d}')
+            d = d[:-3]
+            sleep(0.4)
+            dfinal += int(d)
+        dfinal = f'{dfinal} T$'
+        print(f'A sua riqueza total encontrada foi {dfinal}')
+        return dfinal
+    else:
+        d1 = riquezamedia(20)
+        sleep(0.4)
+        print(f'A sua riqueza total encontrada foi {d1}')
+        return d1
+
+def dinheirond9(rolldinheiro):
+    if rolldinheiro < 10:
+        dinheirorep0()
+        return 0
+    elif rolldinheiro < 35:
+        d1 = riquezamedia(0)
+        sleep(0.4)
+        print(f'A sua riqueza total encontrada foi {d1}')
+        return d1
+    elif rolldinheiro < 85:
+        dfinal = dinheirorep4()
+        return dfinal
+    else:
+        dfinal = 0
+        dric = randint(1, 3)
+        sleep(0.4)
+        print(f'Você encontrou {dric} riquezas médias.')
+        for c in range(0, dric):
+            d = riquezamedia(0)
+            sleep(0.4)
+            print(f'Totalizando {d}')
             d = d[:-3]
             sleep(0.4)
             dfinal += int(d)
