@@ -1,10 +1,13 @@
 from random import randint
 from time import sleep
-from riqueza import *
+from riqueza import * #Arquivo que contém as fórmulas de riquezas
 
+# "dinheirorepX" são os valores de dinheiros que se repetem ao longo dos NDs
 def dinheirorep0():
     sleep(0.4)
     print('Sua rolagem de dinheiro não rendeu nada.')
+    dfinal = 0
+    return dfinal
 
 def dinheirorep1():
     d1 = randint(1, 4)
@@ -59,6 +62,7 @@ def dinheirorep6():
     return dfinal
 
 
+#Fórmulas das riquezas de cada ND
 def dinheirondquarto(rolldinheiro):
     if rolldinheiro < 30:
         dinheirorep0()

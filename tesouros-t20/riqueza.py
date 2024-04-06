@@ -1,6 +1,7 @@
 from random import randint
 from time import sleep
 
+#Função que chama riquezas menores
 def riquezamenor(porcento):
     ricroll = randint(1, 100)
     print(f'O dado de uma riqueza foi {ricroll}')
@@ -19,7 +20,7 @@ def riquezamenor(porcento):
         if roll[0] <= ricroll <= roll[1]:
             sleep(0.4)
             return ric()
-
+#Função que chama riquezas médias
 def riquezamedia(porcento):
     ricroll = randint(1, 100)
     print(f'O dado de uma riqueza foi {ricroll}')
@@ -39,7 +40,7 @@ def riquezamedia(porcento):
         if roll[0] <= ricroll <= roll[1]:
             sleep(0.4)
             return ric()
-
+#Função que chama riquezas maiores
 def riquezamaior(porcento):
     ricroll = randint(1, 100)
     print(f'O dado de uma riqueza foi {ricroll}')
@@ -59,7 +60,7 @@ def riquezamaior(porcento):
         if roll[0] <= ricroll <= roll[1]:
             sleep(0.4)
             return ric()
-
+#Função das riquezas em si, elas aparecem em mais de uma categoria na maior parte das vezes
 def riqueza1():
     d1 = randint(1, 4)
     d2 = randint(1, 4)
